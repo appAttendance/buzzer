@@ -1,6 +1,9 @@
 A fork of https://github.com/bufferapp/buzzer
 
-Customized for Hacker Jeopardy at MCH2022
+Customized for Hacker Jeopardy at MCH2022. New features:
+* Sound buzzer
+* Red background when the first user presses the buzzer
+* Larger text for usage in a large room
 
 ## Running the app
 
