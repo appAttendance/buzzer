@@ -25,6 +25,8 @@ socket.on('buzzes', (buzzes) => {
 
     if (cleaned === false){
     document.body.style.backgroundColor = "red";
+    var audio = new Audio("buzzer.ogg");
+    audio.play();
     }
     // This seems to be needed, but I'm very confused
     cleaned = false;
