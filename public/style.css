@@ -6,6 +6,15 @@ html {
   height: 100%;
 }
 
+/* hacks to make body green but not this text */
+h2 {
+  color: black;
+}
+
+li {
+  color: black;
+} 
+
 body {
   padding: 0;
   margin: 0;
