@@ -4,6 +4,7 @@ Customized for Hacker Jeopardy at MCH2022. New features:
 * Sound buzzer
 * Red background when the first user presses the buzzer
 * Larger text for usage in a large room
+![Buzzer screenshot](/screenshots/buzzer.png "Buzzer screenshot")
 
 ## Known issues
 * Host is not warned when audio permissions aren't given
