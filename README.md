@@ -36,3 +36,21 @@ number. Joining will give them a giant buzzer button!
 
 The host heads over to `/host` and will be able to see everyone that buzzes in and clear the list
 in between questions.
+
+## Nginx reverse proxy
+Add the following to `/etc/nginx/sites-available/default`:
+```
+    server_name example.com;
+
+        location / {
+                proxy_pass http://localhost:8090;
+                proxy_set_header Host $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+```
+
+Get a certificate:
+```
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx -d example.com
+```
