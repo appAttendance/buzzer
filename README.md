@@ -40,13 +40,13 @@ in between questions.
 ## Nginx reverse proxy
 Add the following to `/etc/nginx/sites-available/default`:
 ```
-    server_name example.com;
+server_name example.com;
 
-        location / {
-                proxy_pass http://localhost:8090;
-                proxy_set_header Host $host;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
+location / {
+        proxy_pass http://localhost:8090;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+}
 ```
 
 Get a certificate:
