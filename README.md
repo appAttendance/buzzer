@@ -11,6 +11,8 @@ Customized for Hacker Jeopardy at MCH2022. New features:
 * Host is not warned when audio permissions aren't given
 * Buzzer sounds can overlap
 * Number of joined users does not decrease when users leave the buzzer
+* Teams are not deduplicated
+* Everything is unauthenticated
 
 ## Running the app
 
