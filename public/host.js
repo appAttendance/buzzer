@@ -19,21 +19,17 @@ socket.on('buzzes', (buzzes) => {
     })
     .map(user => `<li>${user.name} on Team ${user.team}</li>`)
     .join('')
-    // const element = document.getElementsByClassName("body")
-    //element[0].style["background-color"] = "yellow";
-
 
     if (cleaned === false){
-    document.body.style.backgroundColor = "red";
-    var audio = new Audio("buzzer.ogg");
-    audio.play();
+	// Play the sound if someone presses the buzzer. TODO: warn host of possible insufficient permissions
+        document.body.style.backgroundColor = "red";
+        var audio = new Audio("buzzer.ogg");
+        audio.play();
     }
-    // This seems to be needed, but I'm very confused
+    // If the event listener was run before this function, reset it to false again. Otherwise, nothing changes.
     cleaned = false;
 
 })
-
-
 
 clear.addEventListener('click', () => {
   document.body.style.backgroundColor = "white";
