@@ -37,6 +37,10 @@ docker run -p 8090:8090 buzzer
 Open http://localhost:8090 in your browser to start!
 
 #### Optional: Nginx reverse proxy
+```
+sudo apt install certbot python3-certbot-nginx nginx
+```
+
 Add the following to `/etc/nginx/sites-available/default`:
 ```
 server_name example.com;
@@ -50,7 +54,6 @@ location / {
 
 Get a certificate:
 ```
-sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d example.com
 ```
 
