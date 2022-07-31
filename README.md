@@ -16,18 +16,19 @@ If you can, you should use hardware buttons. Those are way more fun than this, a
 * Teams are not deduplicated
 * Everything is unauthenticated
 
-## Running the app
-
-You'll need [Node.js](https://nodejs.org) or [Docker](https://www.docker.com/) to run this
-application. For Node:
-
+## Installation 
+First clone this repo, might require installing Git:
 ```
+git clone https://gitlab.com/eloydegen/hacker-jeopardy-buzzer
+cd hacker-jeopardy-buzzer
+```
+### Debian
+```
+sudo apt update && sudo apt install nodejs
 npm install
 node index.js
 ```
-
-For Docker:
-
+### Docker
 ```
 docker build -t buzzer .
 docker run -p 8090:8090 buzzer
@@ -35,15 +36,7 @@ docker run -p 8090:8090 buzzer
 
 Open http://localhost:8090 in your browser to start!
 
-## How to use
-
-The players goto the homepage (`http://localhost:8090/`) and they can enter their name and team
-number. Joining will give them a giant buzzer button!
-
-The host heads over to `/host` and will be able to see everyone that buzzes in and clear the list
-in between questions.
-
-## Nginx reverse proxy
+#### Optional: Nginx reverse proxy
 Add the following to `/etc/nginx/sites-available/default`:
 ```
 server_name example.com;
@@ -60,3 +53,11 @@ Get a certificate:
 sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d example.com
 ```
+
+## Usage 
+
+The players goto the homepage (`http://localhost:8090/`) and they can enter their name and team
+number. Joining will give them a giant buzzer button!
+
+The host heads over to `/host` and will be able to see everyone that buzzes in and clear the list
+in between questions.
