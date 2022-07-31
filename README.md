@@ -15,6 +15,7 @@ If you can, you should use hardware buttons. Those are way more fun than this, a
 * Number of joined users does not decrease when users leave the buzzer
 * Teams are not deduplicated
 * Everything is unauthenticated
+* Dependencies are outdated
 
 ## Installation 
 First clone this repo, might require installing Git:
@@ -24,7 +25,7 @@ cd hacker-jeopardy-buzzer
 ```
 ### Debian
 ```
-sudo apt update && sudo apt install nodejs
+sudo apt update && sudo apt install nodejs npm
 npm install
 node index.js
 ```
