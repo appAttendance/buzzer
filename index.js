@@ -37,7 +37,7 @@ io.on('connection', (socket) => {
   socket.on('buzz', (user) => {
     data.buzzes.add(`${user.name}-${user.team}`)
     io.emit('buzzes', [...data.buzzes])
-    console.log(`${user.name} buzzed in!`)
+    console.log(`${user.name} from team ${user.team} buzzed in!`)
   })
 
   socket.on('clear', () => {
