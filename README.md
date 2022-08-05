@@ -65,3 +65,19 @@ number. Joining will give them a giant buzzer button!
 
 The host heads over to `/host` and will be able to see everyone that buzzes in and clear the list
 in between questions.
+
+## Game rules
+* The first team is chosen at random and can choose a category and level. They are not required to raise a question and can wait until a buzzer is pressed.
+* The host should give some explaination of the categories.
+* The first team that presses the buzzer can say the question
+* If it is right, that team is assigned that number of point 
+* If it is wrong, the point of that question will be deducted. No answer is wrong as well.
+* If nobody knows, the host can ask the audience. If even the audience does not know it, the host will read the question.
+
+## Advice 
+* Put a punishment on incorrectly pressing the buzzer. Might be fine to give the teams some time to test whether it works, but afterwards it should stop.
+* Have a separete person who is a judge about the correctness. Then the host does not need to know all the answers as well, and it might avoid a sense of bias by the host.
+* Use a microphone and speaker. 
+* Multiple displays might be useful to be able to show the quiz on full screen and the buzzer on another screen. Make sure to remember to clear the buzzer after every question.
+* Create a team for the audience.
+* As explained by an experienced host of Hacker Jeopardy: the game is mostly not a knowledge quiz for the participating teams, but entertainment for the audience. The 100-300 questions should be known by a large part of the audience. The 400 and 500 questions can be harder. If the audiences knowns almost nothing, it will not be entertaining for them.
